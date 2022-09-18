@@ -1,0 +1,87 @@
+.site-header {
+  background-color: $midnight-green;
+  padding: {
+    top: 73px;
+    bottom: 73px;
+  }
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo-link {
+  margin-right: 80px;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.site-header__logo-img {
+  display: block;
+  width: 160px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.site-header__menyu-open-button {
+  display: none;
+  vertical-align: baseline;
+  width: 30px;
+  height: 25px;
+  margin-left: auto;
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+  color: $white;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    background-color: $white;
+    color: $midnight-green;
+  }
+}
+
+@include breakpoint-down (846px) {
+  .site-header__logo-link {
+    margin-right: 48px;
+  }
+
+  .site-header__logo-img {
+    width: 128px;
+    height: 32px;
+  }
+}
+
+@include breakpoint-down (768px) {
+  .site-header {
+    padding: {
+      top: 64px;
+      bottom: 64px;
+    }
+  }
+}
+
+@include breakpoint-down (743px) {
+  .site-header__menyu-open-button {
+    display: inline-block;
+  }
+}
+
+@include breakpoint-down (376px) {
+  .site-header {
+    padding: {
+      top: 48px;
+      bottom: 48px;
+    }
+  }
+}
+

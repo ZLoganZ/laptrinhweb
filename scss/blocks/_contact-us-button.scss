@@ -1,0 +1,55 @@
+.contact-us-button-primary-normal-light {
+  background-color: transparent;
+  @include contact-us-button;
+  color: $white;
+
+  &:hover, &:active {
+    background-color: $white;
+    color: $dark-green;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $white;
+    color: $dark-green;
+  }
+
+  &:disabled {
+    background-color:transparent;
+    opacity: 0.25;
+  }
+}
+
+.contact-us-button-primary-normal-dark {
+  background-color: transparent;
+  @include contact-us-button ($sacramento-state-green);
+  color: $sacramento-state-green;
+
+  &:hover {
+    background-color: $dark-green;
+    color: $white;
+  }
+
+  &:disabled {
+    background-color: $white;
+    color: $sacramento-state-green;
+    opacity: 0.25;
+  }
+}
+
+.contact-us-button-secondary-normal  {
+  background-color: $white;
+  @include contact-us-button;
+  color: $dark-green;
+
+  &:hover {
+    background-color: $rapture-blue;
+    color: $dark-green;
+    border-color: $rapture-blue;
+  }
+
+  &:disabled {
+    background-color: $white;
+    opacity: 0.25;
+  }
+}
