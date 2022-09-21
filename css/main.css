@@ -70,8 +70,6 @@ pre {
  */
 a {
   background-color: transparent;
-  text-decoration: none;
-  margin-bottom: 10px;
 }
 
 /**
@@ -1355,6 +1353,8 @@ body {
 
 .quote-section__quote-author {
   color: #79C8C7;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .quote-section__quote-authors-position {
@@ -1364,7 +1364,6 @@ body {
   line-height: 18px;
   text-align: center;
   color: #FFFFFF;
-  text-decoration: none;
 }
 
 .quote-section__quote-authors-position,
@@ -1412,4 +1411,9 @@ body {
   border-radius: 100px;
 }
 
+a .quote-section__quote-author:hover {
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+  transition: color 0.3s ease-in-out;
+}
 /*# sourceMappingURL=main.css.map */
