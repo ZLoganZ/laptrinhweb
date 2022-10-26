@@ -21,6 +21,7 @@
         background-size: cover;
        
       }
+      
       div {
         height: 200px;
         background-size: cover;
@@ -31,9 +32,9 @@
       a{
         color: goldenrod;
         background: black;
-        background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-        background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
         background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
         padding: 10px;
         line-height: 28px;
         text-align: center;
@@ -57,9 +58,9 @@
       p {
         color: rgba(255,255,255,1);
         background: black;
-        background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-        background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
         background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
         padding: 10px;
         line-height: 28px;
         text-align: center;
@@ -82,11 +83,12 @@
       }
       
       .first{
-        background-image: url("/img/C1.jpg");
+        background-image: url("./img/C1.jpg");
         transition: transform .2s;
+        z-index: 1;
       }
       .second{
-        background-image: url("/img/C2.jpg");
+        background-image: url("./img/C2.jpg");
         transition: transform .2s;
       }
 
